@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <style>
+        .card-body{
+            position: relative;
+        }
+        .card{
+            overflow: hidden;
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            background: rgba(102, 51, 153, 0.576);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .4s;
+            transform-origin: top;
+            transform: scaleY(0);
+        }
+        .overlay h3{
+            transform: scaleX(0);
+            transform-origin: top;
+            color: black  !important;
+            transition: .2s;
+            transition-delay: .2s;
+        }
+        .card:hover .overlay{
+            display: block;
+
+            transform: scaleY(1);
+        }
+        .card:hover .overlay h3{
+            transform: scaleX(1);
+        }
+        .slick-next {
+             right: 0px;
+
+        }
+
+        .slick-prev {
+            left: 0px;
+            z-index: 5;
+        }
+        .card{
+            width: 90%;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <div class="row autoplay">
+            <div class="col-lg-4">
+                <div class="card  bg-primary text-light text-center">
+                    <div class="card-body">
+                        <h2>Ahmed Munna</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam corporis repudiandae recusandae ratione! Eum minima nam nobis dicta inventore facere laudantium aliquid, harum odit.</p>
+                        <div class="overlay">
+                            <h3>Letest News</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card  bg-primary text-light text-center">
+                    <div class="card-body">
+                        <h2>Ahmed Munna</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam corporis repudiandae recusandae ratione! Eum minima nam nobis dicta inventore facere laudantium aliquid, harum odit.</p>
+                        <div class="overlay">
+                            <h3>Letest News</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card  bg-primary text-light text-center">
+                    <div class="card-body">
+                        <h2>Ahmed Munna</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam corporis repudiandae recusandae ratione! Eum minima nam nobis dicta inventore facere laudantium aliquid, harum odit.</p>
+                        <div class="overlay">
+                            <h3>Letest News</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card  bg-primary text-light text-center">
+                    <div class="card-body">
+                        <h2>Ahmed Munna</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam corporis repudiandae recusandae ratione! Eum minima nam nobis dicta inventore facere laudantium aliquid, harum odit.</p>
+                        <div class="overlay">
+                            <h3>Letest News</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card  bg-primary text-light text-center">
+                    <div class="card-body">
+                        <h2>Ahmed Munna</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam corporis repudiandae recusandae ratione! Eum minima nam nobis dicta inventore facere laudantium aliquid, harum odit.</p>
+                        <div class="overlay">
+                            <h3>Letest News</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card  bg-primary text-light text-center">
+                    <div class="card-body">
+                        <h2>Ahmed Munna</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quisquam corporis repudiandae recusandae ratione! Eum minima nam nobis dicta inventore facere laudantium aliquid, harum odit.</p>
+                        <div class="overlay">
+                            <h3>Letest News</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="jQ/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+$('.row').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerPadding: 100,
+  focusOnSelect:true,
+  
+});
+	
+    </script>
+</body>
+</html>

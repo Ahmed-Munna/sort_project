@@ -1,0 +1,16 @@
+body{
+    background: #999;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    background: rgba(75, 218, 134, 0.412);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.loader img{
+    width: 50vh;
+    height: 100vh;
+}

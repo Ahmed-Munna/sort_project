@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: arial;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+.containar{
+    width: 90%;
+    margin: auto;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+}
+.mainContant ul{
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainContant ul li{
+    position: relative;
+    transition: .3s;
+    padding: 10px 0;
+}
+.mainContant ul li:hover{
+    background-color: #fff;
+}
+.mainContant ul li a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 0px;
+}
+.mainContant ul li a span{
+    border: 1px solid #333;
+    display: block;
+}
+.mainContant ul li:hover a span{
+    animation: borderName .6s 1 ;
+}
+@keyframes borderName{
+    0%{
+        transform:scaleX(0);
+    }
+    100%{
+        transform:scaleX(1);
+    }
+}
+.mainContant ul li:hover a span{
+    transform: translateX(1);
+}
+.mainContant ul li:hover a{
+    color: #000;
+}
+.hambar{
+    font-size: 30px;
+    display: none;
+}
+.mainContant ul li ul {
+    position: absolute;
+    width: 200px;
+    background: #777;
+    display: block;
+    top: 42px;
+    transform: scaleY(0);
+    transition: .4s;
+    transform-origin: top;
+}
+.mainContant ul li:hover .subProt{
+    transform: scaleY(1);
+}
+.mainContant ul li ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-plus-square{
+    display: none;
+}
+@media(max-width:720px){
+
+    .mainContant>ul{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 29px;
+        background-color: #333;
+        width: 100vW;
+        height: 100vh;
+    }
+    .mainContant ul li a{
+        padding-left: 20px;
+    }
+    .mainContant ul li ul {
+        transition: none;
+    }
+    .mainContant ul li:hover .subProt{
+        position: relative;
+        width: 100%;
+        top: 5px;
+        transform-origin: top;
+    }
+    .hambar{
+        display: block;
+    }
+
+    .fa-plus-square{
+        display: none;
+    }
+
+}

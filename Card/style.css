@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#cardSection{
+    width: 100%;
+}
+.cardWrapper{
+    width: 80%;
+    margin: auto;
+}
+.mainCardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainCard {
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 5%;
+    background: linear-gradient( 
+        131deg
+         , #7251b5, #4b54be);
+    border-radius: 50px 0px 50px 0px;
+    transition: .4s;
+}
+.mainCard:hover {
+    transform: translate(0px, -10px);
+}
+.imageSection img {
+    width: 100%;
+    clip-path: circle(100% at 50% -12%);
+}
+.writingSection {
+    padding: 20px 15px;
+    line-height: 25px;
+}
+.writingSection>h2 {
+    font-family: arial;
+}
+.writingSection>p {
+    font-family: sans-serif;
+}
+button#cardBtn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #b5b8f9;
+    display: flex;
+    align-items: center;
+    width: 110px;
+    margin-top: 20px;
+}
+button#cardBtn:hover i{
+    color: white;
+}
+button#cardBtn>i{
+    animation: cardArrow 1s infinite alternate-reverse;
+    position: relative;
+    padding-left: 2px;
+}
+
+@keyframes cardArrow{
+
+    0%{
+        padding-left: 2px;
+    }
+    25%{
+        padding-left: 4px;
+    }
+    50%{
+        padding-left: 6px;
+    }
+    100%{
+        padding-left: 10px;
+    }
+    
+
+
+
+
+}
+
+
+@media(max-width:992px){
+
+    .cardWrapper {
+        width: 85%;
+    }
+
+    .mainCard {
+        width: 350px;
+    }
+
+
+}
+
+@media(max-width:768px){
+
+    .cardWrapper {
+        width: 90%;
+    }
+
+    .mainCard {
+        width: 315px;
+    }
+
+
+}
+
+@media(max-width:420px){
+
+    .cardWrapper {
+        width: 95%;
+    }
+
+    .mainCard {
+        width: 350px;
+    }
+
+
+}

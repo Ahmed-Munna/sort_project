@@ -1,0 +1,114 @@
+* {
+  list-style: none;
+  text-decoration: none; }
+
+nav {
+  position: relative; }
+
+@media only screen and (max-width:766px) {
+  .slide {
+    position: fixed;
+    top: 124px;
+    left: -70vw;
+    background: #7336f1;
+    height: 100%;
+    width: 70vw;
+    -webkit-transition: .3s;
+    transition: .3s;
+    overflow-y: scroll; } }
+
+.slide li {
+  display: inline-block;
+  margin-left: 40px;
+  padding: 50px 0;
+  position: relative; }
+
+@media only screen and (max-width:766px) {
+  .slide li {
+    display: block;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.281);
+    margin: 0;
+    padding: 30px 30px; } }
+  .slide li .submenu {
+    position: absolute;
+    background: #000000bd;
+    width: 200px;
+    top: 120%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    .slide li .submenu li {
+      padding: 20px 20px;
+      margin: 0;
+      display: block;
+      border-bottom: 1px solid #4c4c4c; }
+      .slide li .submenu li a {
+        font-size: 15px;
+        font-weight: 300; }
+  .slide li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #cfcfd8; }
+  .slide li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%; }
+  .slide li:hover > a {
+    color: #ff7ba4; }
+
+.add-slide {
+  left: 0; }
+
+nav {
+  background: #7336f1;
+  width: 100%; }
+
+.container {
+  width: 1140px;
+  margin: auto; }
+
+@media only screen and (max-width:766px) {
+  .container {
+    width: 98%; } }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.toggle-btn i {
+  color: #cfcfd8;
+  margin: 50px 0;
+  display: none;
+  font-size: 25px;
+  z-index: 9999999999999999;
+  cursor: pointer; }
+
+@media only screen and (max-width:766px) {
+  .toggle-btn .fa-bars {
+    display: block; } }
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: black;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+.add-overlay {
+  opacity: .5;
+  visibility: visible; }
